@@ -67,17 +67,6 @@ const mockMovies = [
     cast: ["Louis Hofmann", "Lisa Vicari", "Maja Schöne"]
   },
   {
-    id: 7,
-    title: "The Crown",
-    overview: "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
-    posterPath: "https://image.tmdb.org/t/p/w500/7IbRSKiDnW2AXcbXUNL7C6udOVX.jpg",
-    backdropPath: "https://image.tmdb.org/t/p/original/hTExR8VDu5rUuZR1e95scVTJKwW.jpg",
-    releaseYear: "2016",
-    rating: 90,
-    genre: ["Drama", "History"],
-    cast: ["Olivia Colman", "Tobias Menzies", "Helena Bonham Carter"]
-  },
-  {
     id: 8,
     title: "Squid Game",
     overview: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes.",
@@ -130,7 +119,7 @@ export const searchMovies = (query: string) => {
 // Export categories for easy access
 export const movieCategories = {
   trending: "Trending Now",
-  popular: "Popular on Netflux",
+  popular: "Popular on Netflix",
   newReleases: "New Releases",
   myList: "My List",
   tvShows: "TV Shows",

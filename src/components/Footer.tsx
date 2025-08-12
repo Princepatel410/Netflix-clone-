@@ -72,7 +72,7 @@ const Footer = () => {
         </FooterLinks>
         
         <FooterBottom>
-          <p>&copy; {new Date().getFullYear()} Netflux, Inc.</p>
+          <p>&copy; {new Date().getFullYear()} Netflix, Inc.</p>
         </FooterBottom>
       </FooterContent>
     </FooterContainer>

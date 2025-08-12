@@ -102,7 +102,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }: NavbarProps) => {
   return (
     <Nav scrolled={scrolled}>
       <Link to="/">
-        <LogoText>NETFLUX</LogoText>
+        <LogoText>NETFLIX</LogoText>
       </Link>
       
       <NavItems>

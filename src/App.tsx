@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import Browse from './pages/Browse'
@@ -9,28 +9,6 @@ import Footer from './components/Footer'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const bbInstanceRef = useRef<any>(null);
-
-  useEffect(() => {
-    let isMounted = true;
-    const initBetterbugs = async () => {
-      if (typeof window !== 'undefined') {
-        const { default: Betterbugs } = await import('@betterbugs/web-sdk');
-        const instance = new Betterbugs({
-          apiKey: '87585a4e6feae0303b3c679663f68623',
-          mode: 'production',
-        });
-        if (isMounted) {
-          bbInstanceRef.current = instance;
-        }
-      }
-    };
-    initBetterbugs();
-    return () => {
-      isMounted = false;
-      bbInstanceRef.current?.destroy?.();
-    };
-  }, []);
 
   return (
     <Router>

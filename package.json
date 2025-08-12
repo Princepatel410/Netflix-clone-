@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@betterbugs/web-sdk": "^0.0.12",
     "@types/styled-components": "^5.1.34",
     "axios": "^1.10.0",
     "react": "^19.1.0",
